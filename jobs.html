@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>JavaJam Coffee House - Menu</title>
+<script type ="text/javascript" src="job.js"></script>
+<!-- add javascript into the job page -->
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="wrapper">
+  <header>
+  </header>
+  <div id="leftcolumn">
+  <nav>
+    <ul type="none" >
+      <li><a href="home.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="jobs.html">Jobs</a></li>
+	</ul>
+</nav>
+</div>
+
+<div id="centercolumn">
+ <div class="content">
+  <h2>Jobs at JavaJam</h2>
+	<p>Want to work at JavaJam? Fill out the form below to
+	start your application.Required fields are marked with
+	an asterisk*</p>
+<!--Form Validation- jobs.html-->
+	<form action="show_get.php" method="get">
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <label for="Name">*Name:&nbsp&nbsp</label> <input type="text" name="name" id="Name" size="30"   required><br><br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <label for="Email">*Email:&nbsp&nbsp</label> <input type="email" name="email" id="Email" size="30" placeholder="@gmail.com" required><br><br>
+	&nbsp&nbsp&nbsp <label for="Date">Start Date:&nbsp&nbsp</label> <input type="date" name="Date" id="Date" size="30"> <br><br>
+	<label for="Comments">*Experience:</label>
+    &nbsp <textarea name="myComments" id="myComments" rows="0" cols="20" style="vertical-align:top" required></textarea> <!--placeholder="Year; Job Title; Skills;" -->
+	<br>
+	<input type="submit" value="Apply Now">
+	</form>
+  <script type="text/javascript" src="job2.js"></script>
+
+</div>
+
+</div>
+<footer>
+<small><i>Copyright &copy; 2014 JavaJam Coffee House <br>
+<a href= "mailto: wu@weijie.com">wu@weijie.com</a></i></small>
+</footer>
+ </body>
+</html>
